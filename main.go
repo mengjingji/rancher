@@ -164,7 +164,7 @@ func main() {
 	}
 
 	app.Action = func(c *cli.Context) error {
-		// enable profiler
+		// enable profiler.
 		if profileAddress != "" {
 			go func() {
 				log.Println(http.ListenAndServe(profileAddress, nil))
